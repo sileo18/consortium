@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f67448c-3b71-4e9d-98c3-cb30e51b5ac0" name="Changes" comment="add classes customer group and card" />
+    <list default="true" id="3f67448c-3b71-4e9d-98c3-cb30e51b5ac0" name="Changes" comment="first">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/consorcio/classes/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/consorcio/classes/Card.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/consorcio/classes/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/consorcio/classes/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/consorcio/classes/Group.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/consorcio/classes/Group.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,9 +26,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2jANMIJMNfOkqcuJCc95CdSwvDx" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -34,6 +40,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/GOALS/IdeaProjects/ConsorcioTeste",
     "onboarding.tips.debug.path": "C:/Users/GOALS/IdeaProjects/ConsorcioTeste/src/main/java/org/example/Main.java",
     "settings.editor.selected.configurable": "advanced.settings"
   }
@@ -55,11 +63,20 @@
       <option name="project" value="LOCAL" />
       <updated>1720829511842</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="first">
+      <option name="closed" value="true" />
+      <created>1720831253902</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1720831253902</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add classes customer group and card" />
-    <option name="LAST_COMMIT_MESSAGE" value="add classes customer group and card" />
+    <MESSAGE value="first" />
+    <option name="LAST_COMMIT_MESSAGE" value="first" />
   </component>
 </project>

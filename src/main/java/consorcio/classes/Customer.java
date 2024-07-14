@@ -19,9 +19,7 @@ public class Customer {
 
     //Getters
 
-    public String getCpf() {
-        return cpf;
-    }
+    public String getCpf() { return cpf; }
     public String getStreet() {
         return street;
     }

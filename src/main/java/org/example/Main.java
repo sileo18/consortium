@@ -1,8 +1,12 @@
 package org.example;
 
+import consorcio.classes.Card;
 import consorcio.classes.Customer;
+import consorcio.classes.Group;
 
 import java.sql.SQLOutput;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
@@ -19,15 +23,15 @@ public class Main {
         name = scanner.next();
 
         do {
-            showMenu(name);
+            showMenu();
             operation = scanner.next();
             chooseMenu(operation);
         } while (!operation.equals("3"));
     }
 
-    public static void showMenu(String name) {
+    public static void showMenu() {
 
-        System.out.println(name + " What you wanna do today ? \n 1 - Create Account \n 2 - Acquire a Card \n 3 - Close Program");
+        System.out.println(" What you wanna do today ? \n 1 - Create Account \n 2 - Acquire a Card \n 3 - Close Program");
     }
     public static void chooseMenu(String operation) {
 
@@ -64,7 +68,7 @@ public class Main {
         String name;
         String cel;
 
-        String nothing;
+        String answer;
 
         System.out.println("Write your full name");
         name = scanner.nextLine();
@@ -89,11 +93,70 @@ public class Main {
                 "\n Cellphone: " + customer.getCel()
         );
 
-        nothing = scanner.next();
 
     }
 
     public static void acquireCard() {
+
+        Scanner scanner = new Scanner(System.in);
+
+         String chooseOfGroup;
+
+        Group group = new Group("Automotive", 70, new ArrayList<>());
+        List<Double> creditCardValuesGroup = Group.generateCreditCardValues(10000, 25000, 120000);
+
+        // Set the generated values to the group's cardsAvailable attribute
+        group.setCardsAvailable(creditCardValuesGroup);
+
+        Group groupTwo = new Group("Home", 200, new ArrayList<>());
+        List<Double> creditCardValuesGroupTwo = Group.generateCreditCardValues(50000, 100000, 600000);
+
+        // Set the generated values to the group's cardsAvailable attribute
+        groupTwo.setCardsAvailable(creditCardValuesGroupTwo);
+
+        Group.showAllGroups();
+
+        System.out.println("What group fit's better with you? (1/2)");
+        chooseOfGroup = scanner.nextLine();
+
+        Double valueOfCard;
+        int numberOfCard;
+        Group groupAssociated;
+        Customer holderOfCard;
+
+        switch (chooseOfGroup) {
+            case "1":
+                groupAssociated = group;
+
+                System.out.println("What number of card do you want? (1-500)");
+                numberOfCard = scanner.nextInt();
+
+                System.out.println("What the value of the card?");
+                System.out.println(group.getCardsAvailable());
+
+
+                break;
+
+            case "2":
+                groupAssociated = groupTwo;
+
+                System.out.println("What number of card do you want? (1-200)");
+                numberOfCard = scanner.nextInt();
+
+                break;
+
+
+            default:
+                System.out.println("Invalid operator");
+
+                break;
+
+        }
+
+
+
+
+
 
     }
 }

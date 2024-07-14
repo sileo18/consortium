@@ -52,4 +52,9 @@ public class Card {
     public void setHolderOfCard(Customer holderOfCard) {
         this.holderOfCard = holderOfCard;
     }
+
+    public static void createCard() {
+
+    }
+
 }
