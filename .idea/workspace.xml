@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f67448c-3b71-4e9d-98c3-cb30e51b5ac0" name="Changes" comment="first">
+    <list default="true" id="3f67448c-3b71-4e9d-98c3-cb30e51b5ac0" name="Changes" comment="creating groups">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/consorcio/classes/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/consorcio/classes/Card.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/consorcio/classes/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/consorcio/classes/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/consorcio/classes/Group.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/consorcio/classes/Group.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,17 +34,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/GOALS/IdeaProjects/ConsorcioTeste",
-    "onboarding.tips.debug.path": "C:/Users/GOALS/IdeaProjects/ConsorcioTeste/src/main/java/org/example/Main.java",
-    "settings.editor.selected.configurable": "advanced.settings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/GOALS/IdeaProjects/ConsorcioTeste&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/GOALS/IdeaProjects/ConsorcioTeste/src/main/java/org/example/Main.java&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -71,12 +70,21 @@
       <option name="project" value="LOCAL" />
       <updated>1720831253902</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="creating groups">
+      <option name="closed" value="true" />
+      <created>1720920903824</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1720920903824</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add classes customer group and card" />
     <MESSAGE value="first" />
-    <option name="LAST_COMMIT_MESSAGE" value="first" />
+    <MESSAGE value="creating groups" />
+    <option name="LAST_COMMIT_MESSAGE" value="creating groups" />
   </component>
 </project>

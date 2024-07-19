@@ -1,5 +1,8 @@
 package consorcio.classes;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Customer {
 
     //Attributes
@@ -7,6 +10,8 @@ public class Customer {
     private String street;
     private String name;
     private String cel;
+
+    public static List<Customer> allCustomers = new ArrayList<>();
 
     //Constructor
 

@@ -83,6 +83,7 @@ public class Main {
         cel = scanner.nextLine();
 
         Customer customer = new Customer(cpf, street, name, cel);
+        Customer.allCustomers.add(customer);
 
         System.out.println("Your account was successfully created!");
 
@@ -122,7 +123,36 @@ public class Main {
         Double valueOfCard;
         int numberOfCard;
         Group groupAssociated;
-        Customer holderOfCard;
+        Customer holderOfCard = null;
+
+        if (chooseOfGroup.equals("1")) {
+            groupAssociated = group;
+        } else if (chooseOfGroup.equals("2")) {
+            groupAssociated = groupTwo;
+        } else {
+            System.out.println("Invalid Group");
+            return;
+        }
+
+        System.out.println("Select a customer by CPF: ");
+
+        for (Customer customer : Customer.allCustomers) {
+            System.out.println("Name: " + customer.getName() + ", CPF: " + customer.getCpf());
+        }
+
+        String cpf = scanner.nextLine();
+
+        for (Customer customer : Customer.allCustomers) {
+            if (customer.getCpf().equals(cpf)) {
+                holderOfCard = customer;
+                break;
+            }
+        }
+
+        if (holderOfCard == null) {
+            System.out.println("Customer not found");
+            return;
+        }
 
         switch (chooseOfGroup) {
             case "1":
@@ -134,7 +164,20 @@ public class Main {
                 System.out.println("What the value of the card?");
                 System.out.println(group.getCardsAvailable());
 
+                valueOfCard = scanner.nextDouble();
 
+                boolean isValidCard = Card.chooseCard(valueOfCard, group.getCardsAvailable());
+
+                if (isValidCard) {
+                    Card card = new Card(valueOfCard, numberOfCard, groupAssociated, holderOfCard);
+                    System.out.println("Card acquired successfully!");
+                    System.out.println("Customer: " + holderOfCard.getName() + "\nCard Number: " + numberOfCard + "\nCard Value: " + valueOfCard + "\nType" + group.getTypeCons());
+                    Card.allCards.add(card);
+
+                }
+                else {
+                    System.out.println("Please try again.");
+                }
                 break;
 
             case "2":

@@ -1,13 +1,18 @@
 package consorcio.classes;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Card {
 
     //Attributes
 
-    private Double valueOfCard;
+    private static Double valueOfCard;
     private Integer numberOfCard;
     private Group groupAssociated;
     private Customer holderOfCard;
+
+    public static List<Card> allCards = new ArrayList<>();
 
     //Constructor
 
@@ -55,6 +60,25 @@ public class Card {
 
     public static void createCard() {
 
+    }
+
+    public static boolean chooseCard(Double value, List<Double> creditsAvailable) {
+        try {
+            Double selectedValue = value;
+
+            if(creditsAvailable.contains(selectedValue)) {
+                valueOfCard = selectedValue;
+                System.out.println("Value selected: $ " + value);
+                return true;
+            } else {
+                System.out.println("Invalid value. Please select a valid card value.");
+                return false;
+            }
+
+        } catch (Exception e) {
+            System.out.println("Invalid input. Please enter a numeric value.");;
+            return false;
+        }
     }
 
 }
